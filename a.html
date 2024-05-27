@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1> Abhishek </h1>
+     <p> He is a software Developer</p>
+     <p> He also loves Teaching</p>
+
+     <!-- <script src="./one.js"></script> -->
+
+     <script>
+        let nameFromA = document.querySelector('h1');
+        let paraFromA = document.querySelectorAll('p');
+
+        let infoA = {
+            name: nameFromA.innerText,
+            para: [paraFromA[0].innerText, paraFromA[1].innerText]
+        }
+
+        // console.log(infoA);
+
+        let infoAJson = JSON.stringify(infoA);
+
+        localStorage.setItem("user",infoAJson)
+
+        // store this object in localstorage
+
+     </script>
+</body>
+</html>
+
+
+<!--  locastorage -->

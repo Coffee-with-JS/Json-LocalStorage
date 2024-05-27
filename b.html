@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2> Anubhav </h2>
+
+     <!-- <script src="./one.js"></script> -->
+
+        <script>
+             // access the things that are stored in local storage
+             let infoOfA = localStorage.getItem("user");
+             let infoOfAObj = JSON.parse(infoOfA);
+             console.log(infoOfAObj);
+        </script>
+</body>
+</html>
